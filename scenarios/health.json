@@ -1,0 +1,24 @@
+{
+  "done": {
+    "variables": {
+      "continuetimer": {
+        "op": "equal",
+        "reference": 10
+      }
+    }
+  },
+  "reward": {
+    "variables": {
+      "health": {
+        "penalty": 1.0
+      },
+      "enemy_health": {
+        "penalty": -1.0
+      },
+      "score": {
+        "reward": 1.0
+      }
+    }
+  },
+  "crop": [0, 16, 256, 200]
+}

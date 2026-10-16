@@ -1,0 +1,77 @@
+# Git Ignore for Street Fighter II Reinforcement Learning Project
+
+# Submodules / Sub-repositories
+/stable-retro/
+stable-retro/
+
+# ROMs and copyrighted binary assets
+rom.md
+*.bin
+*.gen
+*.smd
+*.gg
+
+# Models & Checkpoints: ignore all runs and intermediate step zips by default
+*.zip
+runs/**
+runs/**/sf2_ppo_*_steps.zip
+runs/**/checkpoint_*
+runs/**/tb/
+runs/**/events.out.tfevents.*
+!runs/sf2_multi/
+!runs/sf2_multi/progress.csv
+!runs/sf2_multi/sf2_ppo_final.zip
+!runs/characters/
+!runs/characters/**/progress.csv
+!runs/characters/**/sf2_ppo_final.zip
+!README.md
+!*.md/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.so
+*.dll
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+.ipynb_checkpoints/
+Untitled.ipynb
+homebrew_test/
+
+# Build and CMake artifacts
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.o
+*.obj
+*.a
+*.lib
+
+# Logs and training checkpoints
+*.log
+runs/**/checkpoint_*
+runs/**/events.out.tfevents.*
+
+# Scratch files & temporary testing artifacts
+scratch/
+current_match_screenshot.png
+match_state_frame.png
+*.png
+!assets/**/*.png
+!assets/*.png
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
